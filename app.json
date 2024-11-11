@@ -1,4 +1,4 @@
-{
+{     
     "name": "branded-auto-reaction-bot",
     "description": "A Telegram Bot that automatically reacts to posts in Telegram Channels, groups, and private messages, developed as a serverless application.",
     "repository": "https://github.com/WCGKING/Branded-Auto-Reaction-Bot",

@@ -50,16 +50,16 @@ async function onUpdate(data, botApi, Reactions, RestrictedChats, botUsername, R
         if (data.message && (text === '/start' || text === '/start@' + botUsername)) {
             await botApi.sendMessage(chatId, startMessage.replace('UserName', content.chat.type === "private" ? content.from.first_name : content.chat.title), [
                 [
-                    { "text": "➕ Add to Channel ➕", "url": `https://t.me/${botUsername}?startchannel=botstart` },
-                    { "text": "➕ Add to Group ➕", "url": `https://t.me/${botUsername}?startgroup=botstart` },
+                    { "text": "➕ ضيفني لقناتك يا بتنجانة ➕", "url": `https://t.me/${botUsername}?startchannel=botstart` },
+                    { "text": "➕ ضيفني لجروبك يا بتنجانة ➕", "url": `https://t.me/${botUsername}?startgroup=botstart` },
                 ],
                 [
-                    { "text": "Github Source 📥", "url": "https://github.com/WCGKING/Branded-Auto-Reaction-Bot" },
+                    { "text": "عمك ياض يا بتنجانة", "url": "https://t.me/A_3AMIRTRADER" },
                 ]
             ]);
         } else if (data.message && text === '/reactions') {
             const reactions = Reactions.join(", ");
-            await botApi.sendMessage(chatId, "✅ Enabled Reactions : \n\n" + reactions);
+            await botApi.sendMessage(chatId, "✅ دي التفاعلات المتاحة ياض يا بتنجانة : \n\n" + reactions);
         } else {
             // Calculate the threshold: higher RandomLevel, lower threshold
             let threshold = 1 - (RandomLevel / 10);
